@@ -13,6 +13,6 @@ jobs:
       run: |
         curl -X POST https://icanhazdadjoke.com/graphql \
          -H "Content-Type: application/json" \
-         -d '{"query": "{ joke { id joke } }"}'
+         -d '{"query": "{ joke { id joke } }"}' || true
         - name: I am Ann and it is my first echo request
           run: echo "Workflow completed successfully"
